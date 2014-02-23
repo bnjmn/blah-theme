@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="{{ SITEURL }}/theme/css/structure.css" type="text/css" />
+    <link rel="stylesheet" href="{{ SITEURL }}/theme/css/{{ CSS_FILE }}" type="text/css" />
+  </head>
+
+  <body> 
+
+    <div class="wrapper">
+      <div class="inner-wrapper">
+        <header class="base">
+        {% block header %}
+          <h3 class="sitename"><a href="{{ SITEURL }}">{{ SITENAME }}</a></h3>
+          <nav class="">
+          <ul>
+            {% for title, link, desc  in MENUITEMS %}
+              <li><a href="{{ link }}" title="{{ desc }}">{{ title }}</a></li>
+            {% endfor %}
+          </ul>
+          </nav>
+        {% endblock header %}
+        </header>
+
+        <div class="content">
+          {% block content %}{% endblock content %}
+        </div>
+      </div> <!-- close inner-wrapper -->
+    </div> <!-- close wrapper -->
+
+    <footer class="base">
+      {% block footer %}{% endblock footer %}
+      {% include 'copyright.html' %}
+    </footer>
+
+    {% block end_js %}{% endblock end_js %}
+    {% include 'analytics.html' %}
+  </body>
+</html>

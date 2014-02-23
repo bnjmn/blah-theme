@@ -1,0 +1,108 @@
+@import url(http://reset5.googlecode.com/hg/reset.min.css);
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans);
+@import url(http://fonts.googleapis.com/css?family=Ubuntu+Mono);
+@import url("pygment-colorful.css");
+
+body { 
+  font-family: 'Droid Sans', sans-serif; 
+  font-size: 15px; 
+  line-height: 25px;
+  color: black;
+  font-weight: 500;
+}
+
+div.cc-license {
+  font-size: 0.66em;
+  width:100%;
+  margin: 30px;
+  text-align: right;
+  letter-spacing: 4px;
+  float: right;
+}
+
+/* Generic Styles */
+a { color: black; }
+a:hover { color: #52A3CC; }
+
+p, ul, ol { margin: 1.2em 0; }
+ul, ol { list-style-position: inside; padding-left: 20px; }
+ul ol, ol ul, ul ul, ol ol { margin: 10px 0; padding-left: 40px; }
+li { padding: 0; }
+
+blockquote {
+  letter-spacing: 2px;
+  padding-left: 30px;
+  border-left: 3px solid #eee;
+}
+
+pre, code, tt {
+  font-family: 'Ubuntu Mono', sans-serif;
+  font-size: 0.9em;
+}
+pre {
+  background: #eee;
+  padding: 5px 10px;
+  margin: 1.3em 0px;
+  overflow: auto;
+}
+
+h1, h2, h3, h4, h5, h6 { font-weight: 600; color: #383838; }
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { text-decoration: none; }
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover { 
+  text-decoration: underline; 
+}
+h1 { font-size: 44px; line-height: 50px; }
+h2 { font-size: 36px; line-height: 40px; }
+h3 { font-size: 28px; line-height: 32px; }
+h4 { font-size: 26px; line-height: 28px; }
+
+
+/* Site Header */
+header.base {
+  padding: 10px 0px 10px;
+}
+header.base h3 {
+  margin-bottom: 0px;
+}
+header.base a {
+  text-decoration: none;
+}
+header.base a:hover {
+  text-decoration: underline;
+}
+header.base nav li {
+  display: inline-block;
+  padding-left: 20px;
+}
+header.base nav ul {
+  margin: 0px;
+}
+
+/* article index, used for any list of articles */
+table.article-index {
+  margin: 15px 0px;
+}
+table.article-index td {
+  padding: 0 10px;
+}
+time.index {
+  font-size: 0.8em;
+  color: #333333;
+}
+
+/* Article header */
+header.article h1 {
+  margin-bottom: 0;
+  margin-top: 0px;
+}
+header.article time {
+  font-size: 0.8em;
+}
+header.article {
+  margin-bottom: 25px;
+}
+
+/* Float helpers */
+.left { float: left; }
+.right { float: right; }
+.clear-float { clear: both; }

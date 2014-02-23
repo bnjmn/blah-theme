@@ -1,0 +1,10 @@
+<table class="article-index">
+  {% for article in dates %}
+    <tr>
+      <td>
+        <time class="index">{{ article.date|strftime('%d %b %Y') }}</time>
+      </td>
+      <td><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></td>
+    </tr>
+  {% endfor %}
+</table>

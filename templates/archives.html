@@ -1,0 +1,6 @@
+{% extends "base.html" %}
+{% block content %}
+  {% set dates = dates | reverse %}
+  {% include 'article_index.html' %}
+{% endblock content %}
+

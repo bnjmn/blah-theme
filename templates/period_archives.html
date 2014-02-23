@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+
+  <h4>An Archive of Articles</h4>
+  {# Period context currently not available in Pelican 3.3.0
+  <h3>Period {{ period | reverse | join(' ') }}</h3>
+  #}
+  {% include 'article_index.html' %}
+
+{% endblock content %}
